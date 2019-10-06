@@ -10,7 +10,7 @@ namespace SE4TurnProcessor
 {
     static class Program
     {
-        static List<Game> games;
+        public static List<Game> games;
 
         /// <summary>
         /// The main entry point for the application.

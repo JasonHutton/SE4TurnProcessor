@@ -40,5 +40,9 @@ namespace SE4TurnProcessor
             players.Add(new Player(number, label, gameName));
         }
 
+        public override string ToString()
+        {
+            return gameName;
+        }
     }
 }
