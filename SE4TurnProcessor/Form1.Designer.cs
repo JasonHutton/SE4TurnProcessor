@@ -44,6 +44,7 @@
             this.txtBinPath.Name = "txtBinPath";
             this.txtBinPath.Size = new System.Drawing.Size(703, 20);
             this.txtBinPath.TabIndex = 0;
+            this.txtBinPath.TextChanged += new System.EventHandler(this.txtBinPath_TextChanged);
             // 
             // lblBinPath
             // 
@@ -82,6 +83,7 @@
             this.txtSavePath.Name = "txtSavePath";
             this.txtSavePath.Size = new System.Drawing.Size(703, 20);
             this.txtSavePath.TabIndex = 3;
+            this.txtSavePath.TextChanged += new System.EventHandler(this.txtSavePath_TextChanged);
             // 
             // Form1
             // 

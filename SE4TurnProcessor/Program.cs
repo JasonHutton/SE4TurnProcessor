@@ -10,13 +10,15 @@ namespace SE4TurnProcessor
 {
     static class Program
     {
+        static List<Game> games;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            List<Game> games = new List<Game>();
+            games = new List<Game>();
             foreach(string game in ListGamesInFolder(Game.savePath))
             {
                 games.Add(new Game(Path.GetFileName(game)));

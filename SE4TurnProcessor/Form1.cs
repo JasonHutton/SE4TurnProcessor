@@ -15,6 +15,19 @@ namespace SE4TurnProcessor
         public Form1()
         {
             InitializeComponent();
+
+            txtBinPath.Text = Game.binPath;
+            txtSavePath.Text = Game.savePath;
+        }
+
+        private void txtBinPath_TextChanged(object sender, EventArgs e)
+        {
+            Game.binPath = txtBinPath.Text;
+        }
+
+        private void txtSavePath_TextChanged(object sender, EventArgs e)
+        {
+            Game.savePath = txtSavePath.Text;
         }
     }
 }
