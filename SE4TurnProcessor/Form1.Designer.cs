@@ -149,10 +149,12 @@
             this.txt1Label.Name = "txt1Label";
             this.txt1Label.Size = new System.Drawing.Size(239, 20);
             this.txt1Label.TabIndex = 1;
+            this.txt1Label.TextChanged += new System.EventHandler(this.txt1Label_TextChanged);
             // 
             // cb1Ready
             // 
             this.cb1Ready.AutoSize = true;
+            this.cb1Ready.Enabled = false;
             this.cb1Ready.Location = new System.Drawing.Point(269, 7);
             this.cb1Ready.Name = "cb1Ready";
             this.cb1Ready.Size = new System.Drawing.Size(88, 17);
@@ -173,6 +175,7 @@
             // cb2Ready
             // 
             this.cb2Ready.AutoSize = true;
+            this.cb2Ready.Enabled = false;
             this.cb2Ready.Location = new System.Drawing.Point(269, 7);
             this.cb2Ready.Name = "cb2Ready";
             this.cb2Ready.Size = new System.Drawing.Size(88, 17);
@@ -186,6 +189,7 @@
             this.txt2Label.Name = "txt2Label";
             this.txt2Label.Size = new System.Drawing.Size(239, 20);
             this.txt2Label.TabIndex = 1;
+            this.txt2Label.TextChanged += new System.EventHandler(this.txt2Label_TextChanged);
             // 
             // label2
             // 

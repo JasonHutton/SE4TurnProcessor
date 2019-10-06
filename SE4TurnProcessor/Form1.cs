@@ -39,6 +39,22 @@ namespace SE4TurnProcessor
         private void cmbGames_SelectedIndexChanged(object sender, EventArgs e)
         {
             gameIndex = cmbGames.SelectedIndex;
+
+            txt1Label.Text = Program.games[gameIndex].players[0].label;
+            cb1Ready.Checked = Program.games[gameIndex].players[0].DoesPlayerFileExist();
+
+            txt2Label.Text = Program.games[gameIndex].players[1].label;
+            cb2Ready.Checked = Program.games[gameIndex].players[1].DoesPlayerFileExist();
+        }
+
+        private void txt1Label_TextChanged(object sender, EventArgs e)
+        {
+            Program.games[gameIndex].players[0].label = txt1Label.Text;
+        }
+
+        private void txt2Label_TextChanged(object sender, EventArgs e)
+        {
+            Program.games[gameIndex].players[1].label = txt2Label.Text;
         }
     }
 }
