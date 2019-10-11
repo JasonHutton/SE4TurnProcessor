@@ -97,11 +97,13 @@ namespace SE4TurnProcessor
         private void txt1Label_TextChanged(object sender, EventArgs e)
         {
             Program.games[gameIndex].players[0].label = txt1Label.Text;
+            Program.SavePersistentData();
         }
 
         private void txt2Label_TextChanged(object sender, EventArgs e)
         {
             Program.games[gameIndex].players[1].label = txt2Label.Text;
+            Program.SavePersistentData();
         }
     }
 }
